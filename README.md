@@ -9,6 +9,8 @@ services:
   gocron:
     image: ouqg/gocron
     container_name: gocron
+    cpus: 0.5
+    mem_limit: 500m
     restart: unless-stopped
     ports:
       - "5920:5920"                 # Web 界面端口
